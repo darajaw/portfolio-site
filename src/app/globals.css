@@ -31,11 +31,14 @@ h2{
 
 nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  color: #bc98d3;
+  @apply pb-1;
 }
 
-a{
-  
+p{
+  font-size: 1.2rem;
 }
 
 body {
@@ -44,5 +47,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
+  @apply px-10;
 }
 
