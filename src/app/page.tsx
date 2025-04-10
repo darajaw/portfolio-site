@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
                     className="object-cover scale-[1.1] group-hover:scale-[0.6]"
-                    src="/gaming_dark.png"
+                    src="/hobbies/gaming_dark.png"
                     alt="Game Controller"
                     width={100}
                     height={100}
@@ -137,7 +137,7 @@ export default function Home() {
                 <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
                     className="object-cover scale-[1.1] group-hover:scale-[0.6]"
-                    src="/coding_dark.png"
+                    src="/hobbies/coding_dark.png"
                     alt="A coding icon"
                     width={100}
                     height={100}
@@ -150,7 +150,7 @@ export default function Home() {
                 <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
                     className="object-cover scale-[1.3] group-hover:scale-[0.6]"
-                    src="/movies_dark.png"
+                    src="/hobbies/movies_dark.png"
                     alt="A movie icon"
                     width={100}
                     height={100}
@@ -163,7 +163,7 @@ export default function Home() {
                 <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
                     className="object-cover scale-[1.3] group-hover:scale-[0.8]"
-                    src="/comics_dark.png"
+                    src="/hobbies/comics_dark.png"
                     alt="A book icon"
                     width={100}
                     height={100}
@@ -176,7 +176,7 @@ export default function Home() {
                 <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
                     className="object-cover scale-[1.3] group-hover:scale-[0.8]"
-                    src="/writing_dark.png"
+                    src="/hobbies/writing_dark.png"
                     alt="A pen icon"
                     width={100}
                     height={100}
