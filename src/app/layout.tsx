@@ -24,11 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable}antialiased`}
       >
-        <div className="lg:flex lg:justify-between lg:gap-4">
+        <div className="lg:flex lg:gap-2">
           <Header />
           {children}
         </div>

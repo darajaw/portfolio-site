@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[30%] lg:flex-col lg:justify-between">
-      <div className="lg:pt-8">
+      <div className="pt-8">
         <h1>Daraja Williams</h1>
 
         <p className="mb-4">Full Stack Developer</p>
@@ -15,16 +15,22 @@ export default function Header() {
               About
             </span>
           </a>
-          <a className="group flex items-center active" href="#resume">
+          <a className="group flex items-center active" href="#education">
             <span className="nav-indicator mr-1 h-[2px] w-2 bg-slate-200 transition-all group-hover:w-4  group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
             <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-200 group-focus-visible:text-slate-200">
-              Resume
+              Education
             </span>
           </a>
           <a className="group flex items-center active" href="#projects">
             <span className="nav-indicator mr-1 h-[2px] w-2 bg-slate-200 transition-all group-hover:w-4  group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
             <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-200 group-focus-visible:text-slate-200">
               Projects
+            </span>
+          </a>
+          <a className="group flex items-center active" href="#skills">
+            <span className="nav-indicator mr-1 h-[2px] w-2 bg-slate-200 transition-all group-hover:w-4  group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+            <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-200 group-focus-visible:text-slate-200">
+              Skills
             </span>
           </a>
           <a className="group flex items-center active" href="#hobbies">
@@ -35,12 +41,12 @@ export default function Header() {
           </a>
         </nav>
 
-        <hr></hr>
-
-        <ul className="flex justify-center mt-1 gap-2">
+        <hr/>
+        <ul className="flex justify-center my-1 gap-2">
           <li>
             <a href="https://github.com/darajaw">
               <Image
+                className="opacity-80 hover:opacity-100"
                 src="github_dark.svg"
                 alt="Github Logo"
                 width={50}
@@ -51,6 +57,7 @@ export default function Header() {
           <li>
             <a href="https://www.linkedin.com/in/daraja-williams/">
               <Image
+                className="opacity-80 hover:opacity-100"
                 src="linkedin_dark.svg"
                 alt="LinkedIn Logo"
                 width={50}
@@ -59,6 +66,7 @@ export default function Header() {
             </a>
           </li>
         </ul>
+        <hr className="lg:hidden md:pb-5"/>
       </div>
     </header>
   );
