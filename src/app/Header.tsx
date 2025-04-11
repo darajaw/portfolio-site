@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[30%] lg:flex-col lg:justify-between">
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[32%] lg:flex-col lg:justify-between">
       <div className="pt-8">
         <h1>Daraja Williams</h1>
 

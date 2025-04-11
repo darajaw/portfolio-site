@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" lg:w-[70%] lg:py-8">
+    <div className=" lg:w-[70%] pb-8 ">
       <main className="">
-        <div id="about" className="mb-3">
+        <div id="about" className="mb-3 lg:pt-8">
           <h2 className="mb-1">Hi There!</h2>
           <p>
             Thank you for visiting my website. I am a Full Stack Developer with
@@ -105,25 +105,248 @@ export default function Home() {
           </span>
         </section>
 
+        {/** Skills Section */}
         <section id="skills" className="pt-2 group/list flex flex-col gap-2">
           <div>
             <hr className="h-px" />
             <h2 className="text-center">Skills</h2>
             <hr className="h-px" />
           </div>
-        </section>
 
-        <section id="hobbies" className="pt-2 group/list flex flex-col gap-2">
+          <h3 className="text-center">Programming</h3>
+
+          <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-1">
+          <span className="relative text-right flex w-9 items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/java_dark.png"
+                alt="The Java Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-4.5">Java</h4>      
+          </span>
+
+          <span className="relative text-right flex w-11 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/python_dark.png"
+                alt="The Java Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5">Python</h4>      
+          </span>
+
+          <span className="relative text-right flex w-14 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/js_dark.png"
+                alt="The Java Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5">JavaScript</h4>      
+          </span>
+
+        </div>
+
+        <h3 className="text-center pt-2">Web Development</h3>
+
+          <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-1">
+          <span className="relative text-right flex w-10 items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/react_dark.png"
+                alt="The Java Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-4.5">React</h4>      
+          </span>
+
+          <span className="relative text-right flex w-11 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-black"               
+                src="/skills/nextjs_light.svg"
+                alt="The NextJS Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5">Next.js</h4>      
+          </span>
+
+          <span className="relative text-right flex w-12 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/tailwind_dark.png"
+                alt="The Java Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5">Tailwind</h4>      
+          </span>
+
+        </div>
+
+        <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-1">
+          <span className="relative text-right flex w-10 items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/html_dark.png"
+                alt="The HTML Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-4.5">HTML</h4>      
+          </span>
+
+          
+
+          <span className="relative text-right flex w-10 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/php_dark.svg"
+                alt="The PHP Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5.5">PHP</h4>      
+          </span>
+          
+          <span className="relative text-right flex w-10 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/css_dark.png"
+                alt="The CSS Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5.5">CSS</h4>      
+          </span>
+
+        </div>
+
+        <h3 className="text-center pt-2">Database Management</h3>
+
+          <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-1">
+          <span className="relative text-right flex w-11 items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/mysql_dark.svg"
+                alt="The MySQL Logo"
+                width={65}
+                height={65}
+                  />
+            
+            <h4 className="ml-4.5">MySQL</h4>      
+          </span>
+
+          <span className="relative text-right flex w-11 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/oracle_dark.svg"
+                alt="The Oracle Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5">Oracle</h4>      
+          </span>
+
+          <span className="relative text-right flex w-15 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/postgresql_dark.svg"
+                alt="The PostgreSQL Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5.5">PostgreSQL</h4>      
+          </span>
+
+        </div>
+
+        <h3 className="text-center pt-2">App Development</h3>
+
+        <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-1">
+          <span className="relative text-right flex w-17 items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/android_studio_dark.svg"
+                alt="The Android Studio Logo"
+                width={65}
+                height={65}
+                  />
+            
+            <h4 className="ml-4.5">Android Studio</h4>      
+          </span>
+        </div>
+
+        <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-1">
+          <span className="relative text-right flex w-11 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/flutter_dark.svg"
+                alt="The Flutter Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5">Flutter</h4>      
+          </span>
+
+          <span className="relative text-right flex w-10 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/dart_dark.svg"
+                alt="The Dart Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5.5">Dart</h4>      
+          </span>
+
+          <span className="relative text-right flex w-11 items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <Image 
+            className="absolute -left-0.5 rounded-full shadow-lg bg-white"               
+                src="/skills/kotlin_dark.svg"
+                alt="The Kotlin Logo"
+                width={65}
+                height={60}
+                  />
+            
+            <h4 className="ml-5.5">Kotlin</h4>      
+          </span>
+
+        </div>
+
+        </section>
+      
+       
+       {/** Hobbies Section */}
+        <section id="hobbies" className="pt-4 group/list flex flex-col gap-2 md:pt-4">
           <div>
             <hr className="h-px" />
             <h2 className="text-center">Hobbies</h2>
             <hr className="h-px" />
 
-            <ul className="flex justify-center my-1 gap-2">
+            <ul className="flex justify-center my-1 flex-col md:gap-2 md:flex-row ">
               <li className="group flex flex-col items-center">
-                <div className="w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
+                <div className="transition-all w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
-                    className="object-cover scale-[1.1] group-hover:scale-[0.6]"
+                    className="transition-all object-cover scale-[1.1] group-hover:scale-[0.6]"
                     src="/hobbies/gaming_dark.png"
                     alt="Game Controller"
                     width={100}
@@ -134,9 +357,9 @@ export default function Home() {
               </li>
 
               <li className="group flex flex-col items-center">
-                <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
+                <div className="transition-all group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
-                    className="object-cover scale-[1.1] group-hover:scale-[0.6]"
+                    className="transition-all object-cover scale-[1.1] group-hover:scale-[0.6]"
                     src="/hobbies/coding_dark.png"
                     alt="A coding icon"
                     width={100}
@@ -147,9 +370,9 @@ export default function Home() {
               </li>
 
               <li className="group flex flex-col items-center">
-                <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
+                <div className="transition-all group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
-                    className="object-cover scale-[1.3] group-hover:scale-[0.6]"
+                    className="transition-all object-cover scale-[1.3] group-hover:scale-[0.6]"
                     src="/hobbies/movies_dark.png"
                     alt="A movie icon"
                     width={100}
@@ -160,9 +383,9 @@ export default function Home() {
               </li>
 
               <li className="group flex flex-col items-center">
-                <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
+                <div className="transition-all group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
-                    className="object-cover scale-[1.3] group-hover:scale-[0.8]"
+                    className="transition-all  object-cover scale-[1.3] group-hover:scale-[0.8]"
                     src="/hobbies/comics_dark.png"
                     alt="A book icon"
                     width={100}
@@ -173,9 +396,9 @@ export default function Home() {
               </li>
 
               <li className="group flex flex-col items-center">
-                <div className="group w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
+                <div className="transition-all w-5 h-5 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden group-hover:w-8 group-hover:h-8">
                   <Image
-                    className="object-cover scale-[1.3] group-hover:scale-[0.8]"
+                    className="transition-all object-cover scale-[1.3] group-hover:scale-[0.8]"
                     src="/hobbies/writing_dark.png"
                     alt="A pen icon"
                     width={100}
