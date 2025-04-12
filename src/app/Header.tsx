@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[32%] lg:flex-col lg:justify-between">
@@ -68,6 +69,8 @@ export default function Header() {
         </ul>
         <hr className="lg:hidden md:pb-5"/>
       </div>
+   
     </header>
   );
 }
+
