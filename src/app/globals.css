@@ -50,5 +50,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  @apply px-6;
+  @apply  mx-20;
+}
+
+.hobby{
+  @apply w-20;
+  @apply h-20;
+  @apply group-hover:w-28;
+  @apply group-hover:h-28;
+  @apply transition-all;
+  @apply rounded-full;
+}
+
+section{
+  @apply mt-10;
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[32%] lg:flex-col lg:justify-between">
-      <div className="pt-8">
+      <div className="pt-32">
         <h1>Daraja Williams</h1>
 
         <p className="mb-4">Full Stack Developer</p>

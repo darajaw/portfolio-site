@@ -29,8 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}antialiased`}
       >
-        <div className="lg:flex lg:gap-2">
-          <Header />
+        <div className="lg:flex lg:gap-20">
+          <Header/>
           {children}
         </div>
       </body>
