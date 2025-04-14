@@ -63,5 +63,16 @@ body {
 }
 
 section{
-  @apply mt-10;
+  @apply mt-12;
+}
+
+/* Size for each icon in the skills Section */
+#skills > * svg {
+  @apply absolute;
+  @apply -left-3;
+  @apply rounded-full;
+  @apply shadow-lg;
+  @apply bg-white;
+  @apply w-[75px];
+  @apply h-[75px];
 }
