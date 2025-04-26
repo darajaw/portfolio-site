@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #121212;
     --foreground: #ededed;
   }
 }
@@ -50,7 +50,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  @apply  mx-20;
 }
 
 .hobby{
@@ -63,15 +62,15 @@ body {
 }
 
 section{
-  @apply mt-12;
+  margin-top: 112px;
 }
+
 
 /* Size for each icon in the skills Section */
 #skills > * svg {
   @apply absolute;
   @apply -left-3;
   @apply rounded-full;
-  @apply shadow-lg;
   @apply bg-white;
   @apply w-[75px];
   @apply h-[75px];

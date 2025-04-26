@@ -2,25 +2,41 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" lg:w-[70%] pb-8 ">
-      <main className="">
-        <div id="about" className="mb-3 lg:pt-8">
-          <h2 className="mb-1">Hi There!</h2>
-          <p>
-            Thank you for visiting my website. I am a Full Stack Developer with
-            expertise in various technologies. Feel free to explore my skills,
-            education, and hobbies through the navigation menu. As I continue to
-            add new features to enhance this website, please feel free to send
-            me your feedback!
-          </p>
-        </div>
+    <div className="mx-20 my-20">
+      <main>
+        <section id="about" className="group/list flex flex-col gap-3 md:pt-4 lg:pt-8">
+          <span className="bg-[#202020] p-4 rounded-t-2xl">
+            <h2 className="text-center">Welcome!</h2>
+          </span>
+          <span className="bg-[#202020] p-4">
+            <p>
+              Thank you for visiting my website. I am a Full Stack Developer
+              with expertise in various technologies. Feel free to explore my
+              skills, projects, and hobbies through the navigation menu. As I
+              continue to add new features to enhance this website, please feel
+              free to send me your feedback!
+            </p>
+          </span>
+        </section>
 
-        <section id="education" className="pt-2 group/list flex flex-col gap-2">
-          <div>
-            <hr className="h-px" />
+        {/** Education Section */}
+        <section
+          id="education"
+          className="group/list flex flex-col gap-3 md:pt-4"
+        >
+          <div className="bg-[#202020] p-4 rounded-t-2xl">
             <h2 className="text-center">Education</h2>
-            <hr className="h-px" />
           </div>
+          <span className="bg-[#202020] p-4">
+            <h3 className="text-center">Algonquin College</h3>
+            <p className="text-center">Computer Programming</p>
+            <p className="text-center">2024 - 2026</p>
+          </span>
+          <span className="bg-[#202020] p-4">
+            <h3 className="text-center">Brock University</h3>
+            <p className="text-center">BSc Biotechnology (Honours)</p>
+            <p className="text-center">2017 - 2023</p>
+          </span>
         </section>
 
         <section id="projects" className="pt-2 group/list flex flex-col gap-6">
@@ -30,19 +46,18 @@ export default function Home() {
             <hr className="h-px" />
           </div>
 
-          <span className=" p-4 hover:outline-1 rounded-md hover:drop-shadow-lg hover:bg-slate-800 group">
+          <span className=" p-4 bg-[#202020] hover:outline-1 rounded-md hover:bg-slate-800 group">
             <a
               href="https://github.com/darajaw/Smart-Diary"
               className="flex flex-col items-center gap-3 md:flex-row md:gap-6"
             >
-              
-                <Image
-                  width={450}
-                  height={450}
-                  className="rounded-md"
-                  src="/projects/diary.png"
-                  alt="Image of the Diary Website"/>                  
-              
+              <Image
+                width={450}
+                height={450}
+                className="rounded-md"
+                src="/projects/diary.png"
+                alt="Image of the Diary Website"
+              />
 
               <div>
                 <h3 className="group-hover:text-green-300">Smart Diary</h3>
@@ -60,17 +75,18 @@ export default function Home() {
             </a>
           </span>
 
-          <span className=" p-4 hover:outline-1 rounded-md hover:drop-shadow-lg hover:bg-slate-800 group">
+          <span className=" p-4 bg-[#202020]  rounded-md hover:outline-1 hover:bg-slate-800 group">
             <a
               href="https://devpost.com/software/screentime-buddy"
               className="flex flex-col items-center gap-3 md:flex-row md:gap-6"
-              >                
-                  <Image
-                    width={250}
-                    height={100}
-                    className="rounded-md"
-                    src="/projects/screentime.jpg"
-                    alt="Image of the Pong game"/>  
+            >
+              <Image
+                width={250}
+                height={100}
+                className="rounded-md"
+                src="/projects/screentime.jpg"
+                alt="Image of the Pong game"
+              />
 
               <div>
                 <h3 className="group-hover:text-green-300">Screentime Buddy</h3>
@@ -88,19 +104,18 @@ export default function Home() {
             </a>
           </span>
 
-          <span className="p-4 hover:outline-1 rounded-md hover:drop-shadow-lg hover:bg-slate-800 group">
+          <span className="p-4 bg-[#202020] hover:outline-1 rounded-md hover:bg-slate-800 group">
             <a
               href="https://github.com/darajaw/JavaPong"
               className="flex flex-col items-center gap-3 md:flex-row md:gap-6"
             >
-              
-                <Image
-                  width={450}
-                  height={450}
-                  className="rounded-md"
-                  src="/projects/pong.png"
-                  alt="Image of the Pong game"/>                  
-              
+              <Image
+                width={450}
+                height={450}
+                className="rounded-md"
+                src="/projects/pong.png"
+                alt="Image of the Pong game"
+              />
 
               <div>
                 <h3 className="group-hover:text-green-300">Pong Game</h3>
@@ -119,7 +134,7 @@ export default function Home() {
         </section>
 
         {/** Skills Section */}
-        <section id="skills" className="group/list flex flex-col gap-2">
+        <section id="skill" className="group/list flex flex-col gap-2 ">
           <div>
             <hr className="h-px" />
             <h2 className="text-center">Skills</h2>
@@ -190,17 +205,17 @@ export default function Home() {
           </div>
 
           {/** WebDev Skills Row #2*/}
-          <div className="flex flex-col gap-10 mb-10 items-center justify-center md:flex-row md:gap-6">
-            <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
-              <svg viewBox="-2.4 -3.8 28.80 28.80">
+          <div className="flex flex-col gap-10 mb-8 items-center justify-center md:flex-row md:gap-6">
+            <span className="relative text-right flex flex-row items-center gap-[90px] overflow-visible rounded-xl border-4 ring-1 ring-black/5">
+              <svg  className="w-8 h-8" viewBox="-2.4 -3.8 28.80 28.80">
                 <path className="fill-white" d="M0 0h24v24H0z" />
                 <path d="m12 18.178-4.62-1.256-.328-3.544h2.27l.158 1.844 2.52.667 2.52-.667.26-2.866H6.96l-.635-6.678h11.35l-.227 2.21H8.822l.204 2.256h8.217l-.624 6.778L12 18.178zM3 2h18l-1.623 18L12 22l-7.377-2L3 2zm2.188 2L6.49 18.434 12 19.928l5.51-1.494L18.812 4H5.188z" />
               </svg>
 
-              <h4 className="ml-[80px] mr-4">HTML</h4>
+              <h4 className="">HTML</h4>
             </span>
 
-            <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <span className="text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
               <svg viewBox="-2.4 -1.5 20.8 20.8">
                 <path d="M7.198 3.06a2.883 2.883 0 0 0-2.886 2.88v6.407A2.155 2.155 0 0 1 2.156 14.5 2.155 2.155 0 0 1 0 12.347a.78.78 0 0 1 1.563 0 .593.593 0 0 0 1.187 0V5.941A4.444 4.444 0 0 1 7.198 1.5a4.449 4.449 0 0 1 4.274 3.206A4.673 4.673 0 0 1 16 9.373a.785.785 0 0 1-.008.114.784.784 0 0 1 .008.115v4.118c0 .43-.35.78-.781.78H7.198a.78.78 0 0 1-.781-.78V9.602c0-.431.35-.78.78-.78a2.883 2.883 0 0 0 2.886-2.881A2.883 2.883 0 0 0 7.198 3.06Zm7.248 6.427a.784.784 0 0 1-.008-.114 3.112 3.112 0 0 0-2.805-3.095 4.446 4.446 0 0 1-3.654 4.035v2.627h2.448v-1.737a.78.78 0 0 1 1.563 0v1.737h2.447V9.602c0-.04.003-.077.009-.115Z" />
               </svg>
@@ -208,7 +223,7 @@ export default function Home() {
               <h4 className="ml-[80px] mr-4">PHP</h4>
             </span>
 
-            <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+            <span className="text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
               <svg viewBox="-2.4 -3.8 28.80 28.80">
                 <path d="m2.877 1.992 1.967 17.885 7.148 2.19.293-.09 6.856-2.1 1.982-17.885H2.877zm2.23 2H18.89L17.297 18.35l-5.305 1.625-5.305-1.625-1.58-14.358zm2.112 2v2h7.437l-.232 2h-3.432v2h3.201l-.277 2.399-1.924.56-1.912-.56-.135-1.118-.119-.992-1.986.239.119.992.291 2.43 3.742 1.093 3.756-1.094 1.154-9.949H7.22z" />
               </svg>
@@ -250,42 +265,42 @@ export default function Home() {
 
           <h3 className="text-center mb-4">App Development</h3>
 
-            <div className="flex flex-col gap-10 mb-6  items-center justify-center md:gap-6 md:mb-10">
-              <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
-                <svg viewBox="-4 -3.2 38.40 38.40">
-                  <g id="SVGRepo_iconCarrier">
-                    <path d="M13.8 4h4.5v2.2h1.2c.6 0 1 .4 1 1v4.6l-.6.8 6.2 10.8.9 3.9c.1.5-.5.9-.9.5l-2.9-2.7-2-3.5c-1.6.9-3.3 1.4-5.2 1.4s-3.6-.5-5.1-1.4l-2 3.5L6 27.8c-.4.4-1.1 0-.9-.5l.9-3.9 2.3-4.1c-1.5-1.7-2.3-4-2.3-6.4 0-.4 0-.8.1-1.1h3c-.1.4-.1.7-.1 1.1 0 1.3.4 2.5 1 3.6l2.3-3.9-.6-.8V7.2c0-.6.4-1 1-1h1.2V4zm.6 11.4-2 3.6c1.1.6 2.3 1 3.6 1s2.6-.4 3.6-1l-2.1-3.6-.8 1c-.4.5-1.2.5-1.6 0l-.7-1zm-.3-3.6c.4.7 1.1 1.1 1.9 1.1.8 0 1.6-.4 1.9-1.1.2-.3.3-.7.3-1.1 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .4.1.8.3 1.1z" />
-                  </g>
-                </svg>
-                <h4 className="ml-[80px] mr-4">Android Studio</h4>
-              </span>
-            </div>
+          <div className="flex flex-col gap-10 mb-6  items-center justify-center md:gap-6 md:mb-10">
+            <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl border-4 shadow-lg ring-1 ring-black/5">
+              <svg viewBox="-4 -3.2 38.40 38.40">
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M13.8 4h4.5v2.2h1.2c.6 0 1 .4 1 1v4.6l-.6.8 6.2 10.8.9 3.9c.1.5-.5.9-.9.5l-2.9-2.7-2-3.5c-1.6.9-3.3 1.4-5.2 1.4s-3.6-.5-5.1-1.4l-2 3.5L6 27.8c-.4.4-1.1 0-.9-.5l.9-3.9 2.3-4.1c-1.5-1.7-2.3-4-2.3-6.4 0-.4 0-.8.1-1.1h3c-.1.4-.1.7-.1 1.1 0 1.3.4 2.5 1 3.6l2.3-3.9-.6-.8V7.2c0-.6.4-1 1-1h1.2V4zm.6 11.4-2 3.6c1.1.6 2.3 1 3.6 1s2.6-.4 3.6-1l-2.1-3.6-.8 1c-.4.5-1.2.5-1.6 0l-.7-1zm-.3-3.6c.4.7 1.1 1.1 1.9 1.1.8 0 1.6-.4 1.9-1.1.2-.3.3-.7.3-1.1 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .4.1.8.3 1.1z" />
+                </g>
+              </svg>
+              <h4 className="ml-[80px] mr-4">Android Studio</h4>
+            </span>
+          </div>
 
-            <div className="flex flex-col gap-10 items-center justify-center md:flex-row md:gap-6">
-              <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
-                <svg viewBox="-4 -5 43 43">
-                  <path d="m18.909 14.84-8.086 8.07 8.085 8.085h9.214l-8.073-8.083 8.073-8.073H18.91zm-.017-13.836L3.879 16l4.624 4.624L28.102 1.021h-9.194z" />
-                </svg>
+          <div className="flex flex-col gap-10 items-center justify-center md:flex-row md:gap-6">
+            <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+              <svg viewBox="-4 -5 43 43">
+                <path d="m18.909 14.84-8.086 8.07 8.085 8.085h9.214l-8.073-8.083 8.073-8.073H18.91zm-.017-13.836L3.879 16l4.624 4.624L28.102 1.021h-9.194z" />
+              </svg>
 
-                <h4 className="ml-[80px] mr-4">Flutter</h4>
-              </span>
+              <h4 className="ml-[80px] mr-4">Flutter</h4>
+            </span>
 
-              <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
-                <svg viewBox="-2.5 -1.5 20 20">
-                  <path d="M8.207.13c.26.075.458.286.517.55l1.199 5.397 5.396 1.2a.741.741 0 0 1 .364 1.247l-7.159 7.159a.741.741 0 0 1-.685.2L1.982 14.58a.741.741 0 0 1-.563-.563L.118 8.16a.741.741 0 0 1 .2-.685L7.475.317A.741.741 0 0 1 8.207.13Zm.283 6.332-.92-4.141-5.917 5.915.92 4.142L8.49 6.462Zm-4.868 6.964 4.142.92 5.915-5.915-4.141-.92-5.916 5.915Z" />
-                </svg>
+            <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+              <svg viewBox="-2.5 -1.5 20 20">
+                <path d="M8.207.13c.26.075.458.286.517.55l1.199 5.397 5.396 1.2a.741.741 0 0 1 .364 1.247l-7.159 7.159a.741.741 0 0 1-.685.2L1.982 14.58a.741.741 0 0 1-.563-.563L.118 8.16a.741.741 0 0 1 .2-.685L7.475.317A.741.741 0 0 1 8.207.13Zm.283 6.332-.92-4.141-5.917 5.915.92 4.142L8.49 6.462Zm-4.868 6.964 4.142.92 5.915-5.915-4.141-.92-5.916 5.915Z" />
+              </svg>
 
-                <h4 className="ml-[80px] mr-4">Dart</h4>
-              </span>
+              <h4 className="ml-[80px] mr-4">Dart</h4>
+            </span>
 
-              <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
-                <svg viewBox="-12 -12 55 55">
-                  <path d="m1.734 32 15.068-15.333L32 32zM0 0h16L0 16.667zm17.865 0L0 18.667V32L32 0z" />
-                </svg>
+            <span className="relative text-right flex items-center gap-6 overflow-visible rounded-xl shadow-lg border-4 ring-1 ring-black/5 ">
+              <svg viewBox="-12 -12 55 55">
+                <path d="m1.734 32 15.068-15.333L32 32zM0 0h16L0 16.667zm17.865 0L0 18.667V32L32 0z" />
+              </svg>
 
-                <h4 className="ml-[80px] mr-4">Kotlin</h4>
-              </span>
-            </div>
+              <h4 className="ml-[80px] mr-4">Kotlin</h4>
+            </span>
+          </div>
         </section>
 
         {/** Hobbies Section */}
