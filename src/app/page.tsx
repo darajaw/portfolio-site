@@ -2,9 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mx-20 my-20">
+    <div className="mx-80 my-20">
       <main>
-        <section id="about" className="group/list flex flex-col gap-3 md:pt-4 lg:pt-8">
+        <section
+          id="about"
+          className="group/list flex flex-col gap-3 md:pt-4 lg:pt-8"
+        >
           <span className="bg-[#202020] p-4 rounded-t-2xl">
             <h2 className="text-center">Welcome!</h2>
           </span>
@@ -20,24 +23,23 @@ export default function Home() {
         </section>
 
         {/** Education Section */}
-        <section
+        <span
           id="education"
-          className="group/list flex flex-col gap-3 md:pt-4"
+          className="flex flex-col gap-8 px-20 pb-10 mt-[112px] bg-[#202020]  rounded-2xl md:pt-4"
         >
-          <div className="bg-[#202020] p-4 rounded-t-2xl">
-            <h2 className="text-center">Education</h2>
-          </div>
-          <span className="bg-[#202020] p-4">
+          <h2 className="text-center">Education</h2>
+
+          <span className="bg-[#1F2937] p-4 rounded-2xl">
             <h3 className="text-center">Algonquin College</h3>
             <p className="text-center">Computer Programming</p>
             <p className="text-center">2024 - 2026</p>
           </span>
-          <span className="bg-[#202020] p-4">
+          <span className="bg-[#1F2937] p-4 rounded-2xl">
             <h3 className="text-center">Brock University</h3>
             <p className="text-center">BSc Biotechnology (Honours)</p>
             <p className="text-center">2017 - 2023</p>
           </span>
-        </section>
+        </span>
 
         <section id="projects" className="pt-2 group/list flex flex-col gap-6">
           <div>
@@ -207,7 +209,7 @@ export default function Home() {
           {/** WebDev Skills Row #2*/}
           <div className="flex flex-col gap-10 mb-8 items-center justify-center md:flex-row md:gap-6">
             <span className="relative text-right flex flex-row items-center gap-[90px] overflow-visible rounded-xl border-4 ring-1 ring-black/5">
-              <svg  className="w-8 h-8" viewBox="-2.4 -3.8 28.80 28.80">
+              <svg className="w-8 h-8" viewBox="-2.4 -3.8 28.80 28.80">
                 <path className="fill-white" d="M0 0h24v24H0z" />
                 <path d="m12 18.178-4.62-1.256-.328-3.544h2.27l.158 1.844 2.52.667 2.52-.667.26-2.866H6.96l-.635-6.678h11.35l-.227 2.21H8.822l.204 2.256h8.217l-.624 6.778L12 18.178zM3 2h18l-1.623 18L12 22l-7.377-2L3 2zm2.188 2L6.49 18.434 12 19.928l5.51-1.494L18.812 4H5.188z" />
               </svg>
