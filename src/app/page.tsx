@@ -8,18 +8,31 @@ export default function Home() {
           id="about"
           className="group/list flex flex-col gap-3 md:pt-4 lg:pt-8"
         >
-          <span className="bg-[#202020] p-4 rounded-t-2xl">
+          <span className="bg-[#202020] p-8 rounded-2xl flex gap-8 items-center">
+            <Image
+              width={200}
+              height={200}
+              className="rounded-full h-full border-4 border-[#FACC15]"
+              src="/daraja.jpg"
+              alt="Image of Daraja Williams"
+            />
+
+            <div className="flex flex-col gap-2">
             <h2 className="text-center">Welcome!</h2>
-          </span>
-          <span className="bg-[#202020] p-4">
             <p>
+            I am a Full Stack Developer with a passion for creating
+                innovative web applications. I have experience in both front-end
+                and back-end development, and I am always eager to learn new
+                technologies and improve my skills.
               Thank you for visiting my website. I am a Full Stack Developer
               with expertise in various technologies. Feel free to explore my
               skills, projects, and hobbies through the navigation menu. As I
               continue to add new features to enhance this website, please feel
               free to send me your feedback!
             </p>
+            </div>
           </span>
+
         </section>
 
         {/** Education Section */}
