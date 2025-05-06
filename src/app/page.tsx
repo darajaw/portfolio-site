@@ -8,7 +8,7 @@ export default function Home() {
           id="about"
           className="group/list flex flex-col gap-3 md:pt-4 lg:pt-8"
         >
-          <span className="bg-[#202020] p-8 rounded-2xl flex gap-8 items-center">
+          <span className="bg-[#20283A] p-8 rounded-2xl flex gap-8 items-center">
             <Image
               width={200}
               height={200}
@@ -20,11 +20,7 @@ export default function Home() {
             <div className="flex flex-col gap-2">
               <h2 className="text-center">Welcome!</h2>
               <p>
-                I am a Full Stack Developer with a passion for creating
-                innovative web applications. I have experience in both front-end
-                and back-end development, and I am always eager to learn new
-                technologies and improve my skills. Thank you for visiting my
-                website. I am a Full Stack Developer with expertise in various
+                I am a Full Stack Developer with expertise in various
                 technologies. Feel free to explore my skills, projects, and
                 hobbies through the navigation menu. As I continue to add new
                 features to enhance this website, please feel free to send me
@@ -35,33 +31,33 @@ export default function Home() {
         </section>
 
         {/** Education Section */}
-        <span
+        <section
           id="education"
-          className="flex flex-col gap-8 px-20 pb-10 mt-[112px] bg-[#202020] rounded-2xl md:pt-4"
+          className="flex flex-col gap-8 px-20 pb-10 mt-[112px] bg-[#20283A] rounded-2xl md:pt-4"
         >
           <h2 className="text-center">Education</h2>
 
-          <span className="bg-[#1F2937] p-4 rounded-2xl">
+          <span className="bg-[#0F172A] p-4 rounded-2xl">
             <h3 className="text-center">Algonquin College</h3>
             <p className="text-center">Computer Programming</p>
             <p className="text-center">2024 - 2026</p>
           </span>
-          <span className="bg-[#1F2937] p-4 rounded-2xl">
+          <span className="bg-[#0F172A] p-4 rounded-2xl">
             <h3 className="text-center">Brock University</h3>
             <p className="text-center">BSc Biotechnology (Honours)</p>
             <p className="text-center">2017 - 2023</p>
           </span>
-        </span>
+        </section>
 
         {/** Skills Section */}
         <section
           id="skill"
-          className="flex flex-col gap-8 px-20 pb-10 mt-[112px] bg-[#202020] rounded-2xl md:pt-4"
+          className="flex flex-col gap-8 px-20 pb-10 mt-[112px] bg-[#20283A] rounded-2xl md:pt-4"
         >
           <h2 className="text-center">Skills</h2>
 
           {/** Programming Skills*/}
-          <div className="bg-[#1F2937] px-4 pt-4 pb-6 rounded-2xl">
+          <span className="bg-[#0F172A] px-4 pt-4 pb-6 rounded-2xl">
             <h3 className="text-center mb-4">Programming</h3>
 
             <div className="flex flex-col gap-10 items-center justify-center md:flex-row md:gap-6 text-black">
@@ -91,9 +87,9 @@ export default function Home() {
                 <h4>JavaScript</h4>
               </span>
             </div>
-          </div>
+          </span>
 
-          <div className="bg-[#1F2937] px-4 pt-4 pb-6 rounded-2xl">
+          <span className="bg-[#0F172A] px-4 pt-4 pb-6 rounded-2xl">
             <h3 className="text-center mb-4">Web Development</h3>
 
             {/** WebDev Skills Row #1*/}
@@ -165,10 +161,10 @@ export default function Home() {
                 <h4>CSS</h4>
               </span>
             </div>
-          </div>
+          </span>
 
           {/** Database Skills*/}
-          <div className="bg-[#1F2937] px-4 pt-4 pb-6 rounded-2xl">
+          <span className="bg-[#0F172A] px-4 pt-4 pb-6 rounded-2xl">
             <h3 className="text-center mb-4">Database Management</h3>
 
             <div className="flex flex-col gap-10 items-center justify-center md:flex-row md:gap-6 text-black">
@@ -202,10 +198,10 @@ export default function Home() {
                 <h4>PostgreSQL</h4>
               </span>
             </div>
-          </div>
+          </span>
 
           {/** App Development Skills*/}
-          <div className="bg-[#1F2937] px-4 pt-4 pb-6 rounded-2xl">
+          <span className="bg-[#0F172A] px-4 pt-4 pb-6 rounded-2xl">
             <h3 className="text-center mb-4">App Development</h3>
 
             <div className="flex flex-col gap-10 items-center justify-center md:flex-row md:gap-6 text-black">
@@ -245,102 +241,86 @@ export default function Home() {
                 <h4>Kotlin</h4>
               </span>
             </div>
-          </div>
+          </span>
         </section>
 
         {/** Projects Section */}
-        <section id="projects" className="pt-2 group/list flex flex-col gap-6">
-          <div>
-            <hr className="h-px" />
-            <h2 className="text-center">Projects</h2>
-            <hr className="h-px" />
-          </div>
+        <section
+          id="projects"
+          className="flex flex-col gap-8 px-8 pb-10 mt-[112px] bg-[#20283A] rounded-2xl md:pt-4"
+        >
+          <h2 className="text-center">Projects</h2>
 
-          <span className=" p-4 bg-[#202020] hover:outline-1 rounded-md hover:bg-slate-800 group">
+          <div className="grid grid-cols-2 gap-6">
             <a
               href="https://github.com/darajaw/Smart-Diary"
-              className="flex flex-col items-center gap-3 md:flex-row md:gap-6"
+              className="relative z-1 p-6 bg-[#0F172A] hover:outline-1 rounded-md hover:bg-[#37475C] group"
             >
-              <Image
-                width={450}
-                height={450}
-                className="rounded-md"
-                src="/projects/diary.png"
-                alt="Image of the Diary Website"
-              />
+              <span className="flex flex-col items-center gap-3 md:gap-6">
+                <Image
+                  width={350}
+                  height={450}
+                  className="rounded-md"
+                  src="/projects/diary.png"
+                  alt="Image of the Diary Website"
+                />
 
-              <div>
-                <h3 className="group-hover:text-green-300">Smart Diary</h3>
-                <p>
-                  I developed a journaling website using SQL, PHP, HTML, CSS,
-                  and JavaScript, enabling users to register accounts, search
-                  for, and edit previous entries. Throughout the project, I
-                  applied Agile principles such as iterative development and
-                  collaboration to effectively design and implement both the
-                  website and its supporting database. Additionally, I
-                  coordinated the troubleshooting of various program bugs,
-                  particularly those related to database connection issues.
-                </p>
-              </div>
+                <div className="absolute bottom-5 text-center">
+                  <h3 className="group-hover:text-green-300">Smart Diary</h3>
+                  <p>
+                    A journaling website with user regristration and entry
+                    search attached to an SQL database.
+                  </p>
+                </div>
+              </span>
             </a>
-          </span>
 
-          <span className=" p-4 bg-[#202020]  rounded-md hover:outline-1 hover:bg-slate-800 group">
             <a
               href="https://devpost.com/software/screentime-buddy"
-              className="flex flex-col items-center gap-3 md:flex-row md:gap-6"
+              className="p-6 bg-[#0F172A] hover:outline-1 rounded-md hover:bg-[#37475C] group"
             >
-              <Image
-                width={250}
-                height={100}
-                className="rounded-md"
-                src="/projects/screentime.jpg"
-                alt="Image of the Pong game"
-              />
+              <span className="flex flex-col items-center gap-3 md:gap-6">
+                <Image
+                  width={150}
+                  height={100}
+                  className="rounded-md"
+                  src="/projects/screentime.jpg"
+                  alt="Image of the Pong game"
+                />
 
-              <div>
-                <h3 className="group-hover:text-green-300">Screentime Buddy</h3>
-                <p>
-                  I developed a conceptual version of an app that shares app
-                  usage data between users, created in Android Studio using Java
-                  for the 2024 Hack The Hill II Hackathon. As part of a
-                  collaborative team of programmers, I contributed to the
-                  design, testing, and implementation of the app’s core
-                  functionalities. Additionally, I guided team members in
-                  understanding Android development within a short timeframe to
-                  ensure successful project completion.
-                </p>
-              </div>
+                <div className=" text-center">
+                  <h3 className="group-hover:text-green-300">
+                    Screentime Buddy
+                  </h3>
+                  <p>
+                    A conceptul app that shares phone usage data between users.
+                  </p>
+                </div>
+              </span>
             </a>
-          </span>
 
-          <span className="p-4 bg-[#202020] hover:outline-1 rounded-md hover:bg-slate-800 group">
             <a
               href="https://github.com/darajaw/JavaPong"
-              className="flex flex-col items-center gap-3 md:flex-row md:gap-6"
+              className="p-6 bg-[#0F172A] hover:outline-1 rounded-md hover:bg-[#37475C] group"
             >
-              <Image
-                width={450}
-                height={450}
-                className="rounded-md"
-                src="/projects/pong.png"
-                alt="Image of the Pong game"
-              />
+              <span className="flex flex-col items-center gap-3 md:gap-6">
+                <Image
+                  width={350}
+                  height={450}
+                  className="rounded-md"
+                  src="/projects/pong.png"
+                  alt="Image of the Pong game"
+                />
 
-              <div>
-                <h3 className="group-hover:text-green-300">Pong Game</h3>
-                <p>
-                  I created a Pong clone using Java Swing and AWT libraries,
-                  applying object-oriented programming concepts such as
-                  encapsulation and polymorphism to maintain clean and organized
-                  code. To enhance the user experience and deepen my
-                  understanding of the program’s structure, I implemented
-                  additional features including dark mode and optional
-                  background music.
-                </p>
-              </div>
+                <div className="text-center">
+                  <h3 className="group-hover:text-green-300">Pong Game</h3>
+                  <p>
+                    A Pong clone created using Java Swing and AWT libraries.
+                  </p>
+                </div>
+              </span>
             </a>
-          </span>
+          </div>
         </section>
 
         {/** Hobbies Section */}

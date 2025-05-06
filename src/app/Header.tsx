@@ -3,7 +3,7 @@ import ScrollSpy from "react-scrollspy-navigation";
 
 export default function Header() {
   return (
-    <header className="pb-2 pt-4 w-full top-0 fixed bg-[#1F2937] z-1000000">
+    <header className="pb-2 pt-4 w-full top-0 fixed bg-[#20283A] z-[100]">
       <div className="flex justify-between px-20 py-3 relative">
         <div className="flex flex-col items-center justify-center leading-none">
           <h2 className="tracking-[0.2em] m-0 p-0">DARAJA</h2>
