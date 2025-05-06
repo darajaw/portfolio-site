@@ -3,7 +3,7 @@ import ScrollSpy from "react-scrollspy-navigation";
 
 export default function Header() {
   return (
-    <header className="pb-2 pt-4 w-full top-0 fixed bg-[#1E1E2E] z-1000000">
+    <header className="pb-2 pt-4 w-full top-0 fixed bg-[#1F2937] z-1000000">
       <div className="flex justify-between px-20 py-3 relative">
         <div className="flex flex-col items-center justify-center leading-none">
           <h2 className="tracking-[0.2em] m-0 p-0">DARAJA</h2>
@@ -22,14 +22,14 @@ export default function Header() {
                 Education
               </span>
             </a>
-            <a className="group flex items-center" href="#projects">
-              <span className="text-md font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-200 group-[.active]:text-purple-200">
-                Projects
-              </span>
-            </a>
             <a className="group flex items-center" href="#skill">
               <span className="text-md font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-200 group-[.active]:text-purple-200">
                 Skills
+              </span>
+            </a>
+            <a className="group flex items-center" href="#projects">
+              <span className="text-md font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-200 group-[.active]:text-purple-200">
+                Projects
               </span>
             </a>
             <a className="group flex items-center" href="#hobbies">
